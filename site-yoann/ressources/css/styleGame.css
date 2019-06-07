@@ -1,0 +1,121 @@
+
+canvas {
+	display: inline-block;
+	border: 1px solid black;
+	float: left;
+}
+.presentation {
+	display: inline-block;
+	margin: 10px;
+	height: 350px;
+	width: 100%;
+}
+.presentationText {
+	height: 100%;
+	width: 100%;
+	float: left;
+	
+}
+.HUD {
+	margin-top: 20px;
+	display: inline-block;
+	width: 100%;
+}
+.statuettes {
+	background-repeat: no-repeat;
+	overflow: hidden;
+	height: 200px;
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
+.hearts {
+	position: absolute;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	margin-left: 5px;
+	width: 45px;
+	height: 300px;
+}
+.hearts > p {
+	position: relative;
+}
+.hearts > p > img {
+	position: absolute;
+}
+#tips {
+    font-size: 20px;
+    color: #444;
+    font-family:  Arial, sans-serif;
+	padding-top: 65px;
+	margin-bottom: 20px;
+}
+#startGameButton {
+	position: relative;
+	top: 300px;
+    left: -380px;
+}
+#lookCV {
+	position: relative;
+	top: 270px;
+    left: -510px;
+    opacity: 0;
+}
+#restartGameButton {
+	position: relative;
+	opacity: 0;
+	top: 300px;
+    left: -380px;
+    color: #fff;
+    background-color: #0f3c96;
+    padding: 6px 20px;
+    border-radius: 3px;
+}
+#minimap {
+	visibility: hidden;
+	opacity: 0;
+	margin-left: 5px;
+}
+#heart1 {
+	visibility: hidden;
+}
+#heart2 {
+	top: 45px;
+	visibility: hidden;
+}
+#heart3 {
+	top: 90px;
+	visibility: hidden;
+}
+#score {
+	font-size: 30px;
+	font-family: roboto;
+	visibility: hidden;
+	opacity: 0;
+	clear: left;
+}
+#scoreText {
+	background-color: rgba(255, 255, 0, 0);
+	width: 200px;
+	color: #444;
+}
+#scoreImageContainer {
+	width: 32px;
+	height: 32px;
+	margin-top: 2px;
+	margin-right: 5px;
+	float: left;
+	overflow: hidden;
+}
+#scoreImage {
+	margin-left: -32px;
+	margin-top: -64px;
+}
+#angular {
+	opacity: 0;
+}
+#javascript {
+	opacity: 0;
+}
+#nodeJS {
+	opacity: 0;
+}

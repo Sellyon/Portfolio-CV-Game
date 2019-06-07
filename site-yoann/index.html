@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="ressources/css/styleGame.css" />
+        <link rel="stylesheet" type="text/css" href="ressources/css/styleMain.css">
+        <title>Portfolio Yoann Mroz</title>
+    </head>
+    <body id="page">
+        <script type="text/javascript" src="ressources/js/json2.js"></script>
+        <script type="text/javascript" src="ressources/js/xhr.js"></script>
+        <script type="text/javascript" src="ressources/js/classes/yoyolibrary.js"></script>
+        <script type="text/javascript" src="ressources/js/classes/tileset.js"></script>
+        <script type="text/javascript" src="ressources/js/classes/map.js"></script>
+        <script type="text/javascript" src="ressources/js/classes/character.js"></script>
+        <script type="text/javascript" src="ressources/js/classes/joueur.js"></script>
+        <script type="text/javascript" src="ressources/js/classes/ennemis.js"></script>
+        <script type="text/javascript" src="ressources/js/classes/debug.js"></script>
+        <script type="text/javascript" src="ressources/js/main.js"></script>
+        <header>
+            <div class="wrapper">
+                <h1>YM<span class="dot">.</span></h1>
+                <nav>
+                   <ul>
+                       <li><a href="./#main-image" id="homeAnchorLink">Home</a></li>
+                       <li><a href="./#tips" id="gameAnchorLink">Game</a></li>
+                       <li><a href="./#work" id="workAnchorLink">Work</a></li>
+                       <li><a href="./ressources/CV.pdf" target="blank" id="cvLink">CV</a></li>
+                   </ul> 
+                </nav>
+            </div>
+        </header>
+        
+        <section id="main-image">
+            <div class="wrapper">
+                <h2><strong>Yoann Mroz<br></strong></h2>
+                <h3>Full Stack JS Developper</h3>
+
+            </div>
+        </section>
+        
+        <section id="steps">
+            <div class="wrapper">
+                <ul>
+                    <li id="step1">
+                        <h4>Passionné</h4>
+                        <p>J'aime travailler sur des projets divers et variés, je suis capable d'assurer simultanément plusieurs projets.</p>
+                    </li>
+                    <li id="step2">
+                        <h4>Curieux</h4>
+                        <p>Constament en train d'apprendre et d'utiliser de nouvelles technos.</p>
+                    </li>
+                    <li id="step3">
+                        <h4>Créatif</h4>
+                        <p>"Le secret pour avoir de bonnes idées, c'est d'avoir beaucoup d'idées". Tant mieux car j'ai toujours beaucoup d'idées !</p>
+                    </li>
+                    <div class="clear"></div>
+                    <div id="line"></div>
+                    <div class="HUD">
+                    <div id="tips"><strong id="tipsMessage">ESSAYEZ MON JEU !</strong><a id="endPipe"></a></div>
+                    <a href="#tips" class="button-2" id="startGameButton">Start game</a>
+                    <a class="button-2" id="lookCV" target="blank">Look at CV</a>
+                    <div class="hearts">
+                        <p><img src="" id="heart1" width="1395px" height="45px"></p>
+                        <p><img src="" id="heart2" width="1395px" height="45px"></p>
+                        <p><img src="" id="heart3" width="1395px" height="45px"></p>
+                    </div>
+                    <canvas id="canvas">Votre navigateur ne supporte pas HTML5, veuillez le mettre à jour pour jouer.</canvas>
+                    <div class="statuettes">
+                        <p><img src="ressources/sprites/darkAngular.png" id="angular" height="64px"></p>
+                        <p><img src="ressources/sprites/darkJavascript.png" id="javascript" height="64px"></p>
+                        <p><img src="ressources/sprites/darkNodeJS.png" id="nodeJS" height="64px"></p>
+                    </div>
+                    <canvas id='minimap'>Votre navigateur ne supporte pas HTML5, veuillez le mettre à jour pour jouer.</canvas>
+                    <div id="score">
+                        <div id ="scoreImageContainer"><img src="ressources/sprites/gold.png" id="scoreImage"></div>
+                        <div id="scoreText">: x0000000</div>
+                    </div>
+                </div>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="work">
+            <h3><strong>work<br></strong></h3>
+            <div class="wrapper">
+                <article style="background-image: url(ressources/css/images/detroit.jpg)">
+                    <div class="overlay">
+                        <h4>Detroit Become Human</h4>
+                        <p><small> Game Building sur jeu narratif / PS4. Développé par Quantic Dream, édité par Sony Interactive</small></p>
+                        <a href="https://www.youtube.com/watch?v=QD1pbWCJcKQ" class="button-2" target="blank">Trailer</a>
+                    </div>
+
+                </article>
+                <article style="background-image: url(ressources/css/images/beyond.jpg)">
+                    <div class="overlay">
+                        <h4>Beyond Two Souls</h4>
+                        <p><small>Game Building sur jeu narratif / PS3. Développé par Quantic Dream et édité par Sony Computer Entertainment</small></p>
+                        <a href="https://www.youtube.com/watch?v=c9D1N-MHwog" class="button-2" target="blank">Trailer</a>
+                    </div>
+                    <div class="clear"></div>
+                </article>
+                <article style="background-image: url(ressources/css/images/sick-brick.jpg)">
+                    <div class="clear"></div>
+                    <div class="overlay">
+                        <h4>Sick Bricks</h4>
+                        <p><small>Level Design, Game Building sur hack'n'slash / Smartphone. Développé par Magic Pockets et édité par Spin Master</small></p>
+                        <a href="https://www.youtube.com/watch?v=snzKAwLyeCE" class="button-2" target="blank">Trailer</a>
+                    </div>
+
+                </article>
+                <article style="background-image: url(ressources/css/images/cursed.jpg)">
+                    <div class="overlay">
+                        <h4>The Cursed Crusade</h4>
+                        <p><small> Game/Level Design sur jeu Action-Aventure / PC, PS3 et XBOX360. Développé par Kylotonn</small></p>
+                        <a href="https://www.youtube.com/watch?v=gSILBRY04QA" class="button-2" target="blank">Trailer</a>
+                    </div>
+                    <div class="clear"></div>
+                </article>
+            </div>
+        </section>
+        
+        <footer>
+            <h1>YM<span class="dot">.</span></h1>
+            <div class="copyright"> Copyright © 2019. Tous droits réservés.</div>
+        </footer>
+    
+    </body>
+</html>
